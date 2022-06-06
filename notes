@@ -1,0 +1,42 @@
+// 1. Time and day.
+
+let  date = new Date();
+
+let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+
+let today = weekdays[date.getDay()];
+let hours = date.toLocaleTimeString();
+
+console.log(`Today is: ${today} and time is: ${hours}`)
+
+//2. Print window
+
+function print_window () {
+    window.print();
+}
+
+print_window();
+
+//3. current date
+
+function current_date () {
+    let date = new Date();
+    return date.toLocaleDateString();
+}
+
+console.log(current_date());
+
+//4. find the area of a triangle
+
+let side1 = 5; 
+let side2 = 6;
+let side3 = 7;
+
+let s = (side1 + side2 + side3) / 2;
+
+const area = Math.sqrt(s*((s - side1) * (s - side2) * (s - side3)));
+
+console.log(area);
+
+
